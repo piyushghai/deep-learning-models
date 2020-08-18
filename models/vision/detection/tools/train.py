@@ -11,6 +11,10 @@ import tarfile
 import numpy as np
 import tensorflow as tf
 
+from tensorflow.python.framework.ops import disable_eager_execution
+
+disable_eager_execution()
+
 from awsdet.utils.misc import Config, mkdir_or_exist
 from awsdet.utils.runner import init_dist, master_only, get_dist_info, get_barrier
 from awsdet.utils.keras import freeze_model_layers
