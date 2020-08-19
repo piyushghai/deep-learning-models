@@ -107,7 +107,7 @@ evaluation = dict(interval=1)
 # optimizer
 optimizer = dict(
     type='SGD',
-    learning_rate=5e-3,
+    learning_rate=2.5e-3,
     momentum=0.9,
     nesterov=False,
 )

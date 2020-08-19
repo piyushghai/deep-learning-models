@@ -12,8 +12,7 @@ echo ""
 cd /shared/deep-learning-models/models/vision/detection
 export PYTHONPATH=${PYTHONPATH}:${PWD}
 
-herringrun -n 8 \
---homogeneous \
+herringrun -n 16 \
 -x LD_LIBRARY_PATH \
 -x PATH \
 -x NCCL_SOCKET_IFNAME=^docker0,lo \
